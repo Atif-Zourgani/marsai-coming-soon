@@ -168,7 +168,7 @@ a { color: inherit; text-decoration: none; }
    HERO
 ============================================= */
 .hero {
-  padding: 2.5rem 0 2rem;
+  padding: 0.75rem 0 2rem;
   text-align: center;
 }
 
@@ -185,12 +185,11 @@ a { color: inherit; text-decoration: none; }
   border-radius: 9999px;
 }
 
-.hero__title {
-  font-size: clamp(2.2rem, 10vw, 4rem);
-  font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.04em;
-  margin-bottom: 1rem;
+.hero__logo {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
 }
 
 .hero__tagline {
@@ -461,6 +460,9 @@ a { color: inherit; text-decoration: none; }
 
 .partner-logo:hover { opacity: 1; }
 
+.partner-logo--lg { height: 56px; }
+.partner-logo--sm { height: 22px; }
+
 .partner-divider {
   width: 1px;
   height: 32px;
@@ -579,7 +581,7 @@ a { color: inherit; text-decoration: none; }
 ============================================= */
 @media (min-width: 600px) {
   .container { padding: 0 2rem; }
-  .hero { padding: 4rem 0 3rem; }
+  .hero { padding: 1rem 0 3rem; }
   .call-card, .manifesto-card { padding: 2.5rem; }
 
   .footer__inner {

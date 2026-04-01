@@ -7,6 +7,7 @@ const t = {
     metaTitle: 'MarsAI Festival — Imaginez des futurs souhaitables | 19-20 Juin 2026, Marseille',
     metaDesc: "Festival international du film IA. Appel à films IA et hybrides d'1 minute. 10 000 € pour le premier lauréat. 19 & 20 juin 2026 à Marseille & en ligne.",
     ogTitle: 'MarsAI Festival — Imaginez des futurs souhaitables',
+    heroLogo: 'assets/logos/marsai-by-laplateforme-fr.png',
     heroKicker: 'Festival International du Film IA',
     heroTagline: '"Imaginez des futurs souhaitables"',
     cdPrefix: 'J -', cdSuffix: 'pour envoyer votre film',
@@ -19,17 +20,16 @@ const t = {
     prizeLabel: "Bourse d'aide à la production",
     deadlineText: 'Clôture des soumissions :',
     deadlineDate: '12 mai 2026',
-    trailer: 'https://www.youtube.com/embed/6Xw48yCo59I?rel=0&modestbranding=1',
-    manifestoLabel: 'Le Festival',
-    manifestoTitle: "L'IA : un nouveau langage cinématographique",
-    manifestoP1: "Après l'invention du cinématographe, puis l'avènement de la caméra légère, l'intelligence artificielle marque une nouvelle ère. Le MarsAI Festival est né de cette conviction profonde : l'IA n'est pas une fin en soi, mais un nouveau langage. Elle devient une matière inédite, mise à disposition de la créativité des artistes.",
-    manifestoP2: "<em>Créer, c'est choisir. En une minute, tout compte.</em>",
-    manifestoP3: "Le festival recherche celles et ceux qui osent, qui détournent, qui expérimentent et qui écrivent autrement. Celles et ceux pour qui l'intelligence artificielle est un geste d'auteur, une décision artistique pleinement assumée.",
-    valuesTitle: 'Nos valeurs',
-    valuesP1: "L'IA ne crée pas à ta place. Elle t'ouvre un terrain que personne n'a encore cartographié. Ce que tu en fais, c'est toi. C'est ça qui nous intéresse.",
-    valuesP2: "On croit que la technologie la plus puissante ne vaut rien sans point de vue. Qu'un film de 60 secondes peut dire plus qu'un long-métrage. Que l'intention compte autant que le résultat.",
-    valuesP3: "On croit aux futurs qu'on a envie de construire, pas à ceux qu'on nous prédit. À la création qui rassemble plutôt qu'elle n'effraie. À l'art qui ouvre des portes plutôt qu'il n'en ferme.",
-    valuesCta: "C'est pour ça qu'on existe.",
+    trailer: 'https://www.youtube.com/embed/if6WTlUPwpw?rel=0&modestbranding=1',
+    manifestoLabel: 'Manifeste',
+    manifestoP1: "Nous vivons un moment de bascule. Un moment où la technologie ouvre des possibles et où tout dépend de celles et ceux qui s'en saisissent. L'intelligence artificielle n'est pas une finalité, elle est un langage, un terrain de jeu, une promesse entre nos mains. Créer, c'est choisir.",
+    manifestoP2: "En une minute, tout compte. Chaque idée tranche, chaque silence raconte, chaque image engage.",
+    manifestoP3: "Nous vivons un moment unique avec l'IA, vous pouvez inventer les règles d'un langage que personne ne maîtrise encore.",
+    manifestoP4: "Au travers du MarsAI Festival, nous recherchons celles et ceux qui osent, qui détournent, expérimentent et écrivent autrement.",
+    manifestoP5: "Films IA et œuvres hybrides. Ce qui compte, c'est l'élan, la vision, la nécessité de créer.",
+    manifestoP6: "Nous vous invitons à imaginer des futurs souhaitables. Pas un futur imposé, des futurs pluriels, intimes ou collectifs, ancrés dans le réel autant que dans l'imaginaire. Des futurs où l'on respire mieux, où l'on vit ensemble autrement, où la technologie n'écrase pas, mais révèle. Assez des récits de fin du monde, inventez ceux qui donnent envie de le construire. Au-delà des dystopies, racontez ce qui pourrait advenir de beau, de juste, de vivant.",
+    manifestoP7: "Nous sommes là pour révéler ces visions et accompagner celles et ceux qui les portent à continuer de créer.",
+    manifestoP8: "Ce festival est un point de départ — à vous d'en faire un territoire d'invention.",
     datesLabel: 'Dates clés',
     datesTitle: 'Agenda',
     date1Date: '12 mai 2026',
@@ -46,6 +46,7 @@ const t = {
     metaTitle: 'MarsAI Festival — Imagine Desirable Futures | June 19-20, 2026, Marseille',
     metaDesc: 'International AI film festival. Call for AI and hybrid films of 1 minute. €10,000 for the first laureate. June 19 & 20, 2026 in Marseille & online.',
     ogTitle: 'MarsAI Festival — Imagine Desirable Futures',
+    heroLogo: 'assets/logos/marsai-by-laplateforme-en.png',
     heroKicker: 'International AI Film Festival',
     heroTagline: '"Imagine desirable futures"',
     cdPrefix: 'D -', cdSuffix: 'to submit your film',
@@ -59,16 +60,15 @@ const t = {
     deadlineText: 'Submission deadline:',
     deadlineDate: '12 May 2026',
     trailer: 'https://www.youtube.com/embed/6Xw48yCo59I?rel=0&modestbranding=1',
-    manifestoLabel: 'The Festival',
-    manifestoTitle: 'AI: A New Cinematic Language',
-    manifestoP1: "After the invention of the cinematograph, then the advent of the lightweight camera, artificial intelligence marks a new era. The MarsAI Festival was born from this deep conviction: AI is not an end in itself, but a new language. It becomes an unprecedented medium, placed at the disposal of artists' creativity.",
-    manifestoP2: '<em>To create is to choose. In one minute, everything matters.</em>',
-    manifestoP3: 'The festival is looking for those who dare, who subvert, who experiment and who write differently. Those for whom artificial intelligence is an authorial gesture, a fully assumed artistic decision.',
-    valuesTitle: 'Our values',
-    valuesP1: "AI doesn't create in your place. It opens up a territory no one has mapped yet. What you do with it is you. That's what interests us.",
-    valuesP2: "We believe the most powerful technology is worthless without a point of view. That a 60-second film can say more than a feature. That intention matters as much as the result.",
-    valuesP3: "We believe in the futures we want to build, not the ones predicted for us. In creation that brings together rather than frightens. In art that opens doors rather than closes them.",
-    valuesCta: "That's why we exist.",
+    manifestoLabel: 'Manifesto',
+    manifestoP1: "We are living through a turning point. A moment when technology opens up new possibilities — and everything depends on those who choose to seize them.",
+    manifestoP2: "Artificial intelligence is not an end. It is a language, a playground, a promise in our hands. To create is to choose.",
+    manifestoP3: "In one minute, everything matters. Every idea cuts through. Every silence tells a story. Every image commits.",
+    manifestoP4: "We are living a unique moment with AI. You can invent the rules of a language that no one has mastered yet.",
+    manifestoP5: "Through the MarsAI Festival, we are looking for those who dare — who bend, experiment, and write in new ways.",
+    manifestoP6: "AI films and hybrid works. What matters is the drive, the vision, the need to create.",
+    manifestoP7: "We invite you to imagine desirable futures. Not a single imposed future, but plural ones — intimate or collective — rooted as much in reality as in imagination. Futures where we breathe more freely, where we live together differently, where technology does not dominate, but reveals. Enough of end-of-the-world narratives. Invent the ones that make us want to build what's next. Beyond dystopias, tell stories of what could be beautiful, fair, and alive.",
+    manifestoP8: "We are here to reveal these visions — and to support those who carry them to keep creating. This festival is a starting point. It's up to you to turn it into a territory of invention.",
     datesLabel: 'Key dates',
     datesTitle: 'Schedule',
     date1Date: 'May 12, 2026',
@@ -117,6 +117,7 @@ function applyLang(lang) {
   setMeta('tw-title',  'content', tr.ogTitle);
   setMeta('tw-desc',   'content', tr.metaDesc);
 
+  document.getElementById('hero-logo').setAttribute('src', tr.heroLogo);
   setText('hero-kicker',      tr.heroKicker);
   setText('hero-tagline',     tr.heroTagline);
   setText('cd-prefix', tr.cdPrefix);
@@ -135,15 +136,14 @@ function applyLang(lang) {
   document.getElementById('trailer').setAttribute('src', tr.trailer);
 
   setText('manifesto-label', tr.manifestoLabel);
-  setText('manifesto-title', tr.manifestoTitle);
   setText('manifesto-p1',    tr.manifestoP1);
   setText('manifesto-p2',    tr.manifestoP2);
   setText('manifesto-p3',    tr.manifestoP3);
-  setText('values-title',    tr.valuesTitle);
-  setText('values-p1',       tr.valuesP1);
-  setText('values-p2',       tr.valuesP2);
-  setText('values-p3',       tr.valuesP3);
-  setText('values-cta',      tr.valuesCta);
+  setText('manifesto-p4',    tr.manifestoP4);
+  setText('manifesto-p5',    tr.manifestoP5);
+  setText('manifesto-p6',    tr.manifestoP6);
+  setText('manifesto-p7',    tr.manifestoP7);
+  setText('manifesto-p8',    tr.manifestoP8);
 
   setText('dates-label', tr.datesLabel);
   setText('dates-title', tr.datesTitle);
