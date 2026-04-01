@@ -19,7 +19,7 @@ const t = {
     prizeLabel: 'Prix du premier lauréat — Édition 2026',
     deadlineText: 'Clôture des soumissions :',
     deadlineDate: '12 mai 2026',
-    trailer: 'assets/videos/teaser-fr.mp4',
+    trailer: 'https://www.youtube.com/embed/6Xw48yCo59I?rel=0&modestbranding=1',
     manifestoLabel: 'Le Festival',
     manifestoTitle: "L'IA : un nouveau langage cinématographique",
     manifestoP1: "Après l'invention du cinématographe, puis l'avènement de la caméra légère, l'intelligence artificielle marque une nouvelle ère. Le MarsAI Festival est né de cette conviction profonde : l'IA n'est pas une fin en soi, mais un nouveau langage. Elle devient une matière inédite, mise à disposition de la créativité des artistes.",
@@ -58,7 +58,7 @@ const t = {
     prizeLabel: 'Prize for the first laureate — 2026 Edition',
     deadlineText: 'Submission deadline:',
     deadlineDate: '12 May 2026',
-    trailer: 'assets/videos/teaser-en.mp4',
+    trailer: 'https://www.youtube.com/embed/6Xw48yCo59I?rel=0&modestbranding=1',
     manifestoLabel: 'The Festival',
     manifestoTitle: 'AI: A New Cinematic Language',
     manifestoP1: "After the invention of the cinematograph, then the advent of the lightweight camera, artificial intelligence marks a new era. The MarsAI Festival was born from this deep conviction: AI is not an end in itself, but a new language. It becomes an unprecedented medium, placed at the disposal of artists' creativity.",
@@ -132,10 +132,7 @@ function applyLang(lang) {
   setText('deadline-text', tr.deadlineText);
   setText('deadline-date', tr.deadlineDate);
 
-  const video = document.getElementById('trailer');
-  const src   = document.getElementById('trailer-src');
-  src.setAttribute('src', tr.trailer);
-  video.load();
+  document.getElementById('trailer').setAttribute('src', tr.trailer);
 
   setText('manifesto-label', tr.manifestoLabel);
   setText('manifesto-title', tr.manifestoTitle);
