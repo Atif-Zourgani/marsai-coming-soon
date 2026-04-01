@@ -202,38 +202,29 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* =============================================
-   COUNTDOWN
+   DEADLINE CARD
 ============================================= */
-.countdown {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+.deadline-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 0;
-}
-
-.countdown__item {
-  padding: 1.25rem 0.5rem;
+  padding: 1.5rem 2rem;
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+  font-weight: 500;
+  color: var(--color-text);
   text-align: center;
 }
 
-.countdown__number {
-  font-size: clamp(1.6rem, 7vw, 2.5rem);
-  font-weight: 900;
-  line-height: 1;
+.deadline-card strong {
   background: var(--gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.countdown__label {
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--color-text);
+  font-weight: 800;
+  font-size: clamp(1.4rem, 5vw, 1.8rem);
+  line-height: 1;
 }
 
 /* =============================================

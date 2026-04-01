@@ -9,7 +9,7 @@ const t = {
     ogTitle: 'MarsAI Festival — Imaginez des futurs souhaitables',
     heroKicker: 'Festival International du Film IA',
     heroTagline: '"Imaginez des futurs souhaitables"',
-    cdDays: 'Jours', cdHours: 'Heures', cdMinutes: 'Minutes', cdSeconds: 'Secondes',
+    cdPrefix: 'Clôture des soumissions dans', cdSuffix: 'jours',
     callLabel: 'Appel à films',
     callTitle: 'Films IA &amp; Hybrides<br />1 minute',
     rule1: 'Films 100% IA ou œuvres hybrides',
@@ -48,7 +48,7 @@ const t = {
     ogTitle: 'MarsAI Festival — Imagine Desirable Futures',
     heroKicker: 'International AI Film Festival',
     heroTagline: '"Imagine desirable futures"',
-    cdDays: 'Days', cdHours: 'Hours', cdMinutes: 'Minutes', cdSeconds: 'Seconds',
+    cdPrefix: 'Submissions close in', cdSuffix: 'days',
     callLabel: 'Call for films',
     callTitle: 'AI &amp; Hybrid Films<br />1 minute',
     rule1: '100% AI films or hybrid works',
@@ -119,10 +119,8 @@ function applyLang(lang) {
 
   setText('hero-kicker',      tr.heroKicker);
   setText('hero-tagline',     tr.heroTagline);
-  setText('cd-days-label',    tr.cdDays);
-  setText('cd-hours-label',   tr.cdHours);
-  setText('cd-minutes-label', tr.cdMinutes);
-  setText('cd-seconds-label', tr.cdSeconds);
+  setText('cd-prefix', tr.cdPrefix);
+  setText('cd-suffix', tr.cdSuffix);
 
   setText('call-label',    tr.callLabel);
   setText('call-title',    tr.callTitle);
@@ -170,21 +168,9 @@ function applyLang(lang) {
    COUNTDOWN
 ============================================= */
 function updateCountdown() {
-  const target = new Date('2026-06-19T00:00:00').getTime();
+  const target = new Date('2026-05-12T00:00:00').getTime();
   const diff   = target - Date.now();
-
-  if (diff <= 0) {
-    ['cd-days', 'cd-hours', 'cd-minutes', 'cd-seconds'].forEach(id => {
-      document.getElementById(id).textContent = '00';
-    });
-    return;
-  }
-
-  const pad = n => String(n).padStart(2, '0');
-  document.getElementById('cd-days').textContent    = pad(Math.floor(diff / 86400000));
-  document.getElementById('cd-hours').textContent   = pad(Math.floor((diff % 86400000) / 3600000));
-  document.getElementById('cd-minutes').textContent = pad(Math.floor((diff % 3600000) / 60000));
-  document.getElementById('cd-seconds').textContent = pad(Math.floor((diff % 60000) / 1000));
+  document.getElementById('cd-days').textContent = diff > 0 ? Math.ceil(diff / 86400000) : '0';
 }
 
 /* =============================================
@@ -209,6 +195,5 @@ function initAnimations() {
 document.addEventListener('DOMContentLoaded', () => {
   applyLang(detectLang());
   updateCountdown();
-  setInterval(updateCountdown, 1000);
   initAnimations();
 });

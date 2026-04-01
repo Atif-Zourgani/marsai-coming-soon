@@ -115,23 +115,10 @@
         </h1>
         <p class="hero__tagline" id="hero-tagline">"Imaginez des futurs souhaitables"</p>
 
-        <div class="countdown glass-card" role="timer" aria-label="Compte à rebours avant la clôture des soumissions">
-          <div class="countdown__item">
-            <span class="countdown__number" id="cd-days">00</span>
-            <span class="countdown__label" id="cd-days-label">Jours</span>
-          </div>
-          <div class="countdown__item">
-            <span class="countdown__number" id="cd-hours">00</span>
-            <span class="countdown__label" id="cd-hours-label">Heures</span>
-          </div>
-          <div class="countdown__item">
-            <span class="countdown__number" id="cd-minutes">00</span>
-            <span class="countdown__label" id="cd-minutes-label">Minutes</span>
-          </div>
-          <div class="countdown__item">
-            <span class="countdown__number" id="cd-seconds">00</span>
-            <span class="countdown__label" id="cd-seconds-label">Secondes</span>
-          </div>
+        <div class="deadline-card glass-card" role="timer" aria-live="polite">
+          <span id="cd-prefix">Clôture des soumissions dans</span>
+          <strong id="cd-days">—</strong>
+          <span id="cd-suffix">jours</span>
         </div>
       </section>
 
